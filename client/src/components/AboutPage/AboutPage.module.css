@@ -1,0 +1,49 @@
+.about{
+    background-image: url(../../../public/img/wall2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: auto;
+}
+
+.container{
+    background-color: white;
+    width: 660px;
+    margin: auto;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    overflow: hidden;
+}
+
+.container p,
+.container h2{
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 700px){
+    .container{
+        width: auto;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .container p, .container h2{
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+}
+
+.container p{
+    opacity: 0;
+    transform: translate(0px, 50%);
+}
+
+.container._active > p{
+    opacity: 1;
+    transition: all 0.6s ease 0.4s;
+    transform: translate(0px, 0px);
+}

@@ -1,0 +1,22 @@
+.customButton{
+    background-color: #212529;
+    border-color: #212529;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    margin: 5px;
+
+    height: 40px;
+    width: 97%;
+    color: #fff;
+    cursor: pointer
+}
+
+.customButton:active{
+    box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+}
+
+.customButton:disabled{
+    background-color: #4d5257;
+    opacity: 50%;
+    box-shadow: none
+}

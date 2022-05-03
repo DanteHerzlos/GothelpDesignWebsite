@@ -1,0 +1,22 @@
+.info{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.info p{
+    line-height: 2.75em;
+}
+
+@media (max-width: 670px) {
+    .info{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+}
+
+a{
+
+    text-decoration: none;
+    color: black;
+}

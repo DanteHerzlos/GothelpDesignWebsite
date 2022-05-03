@@ -1,0 +1,15 @@
+.customInput{
+    height: 20px;
+    background-color: rgb(248,249,250);
+    border: 1px solid #1c1f23;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 0.875rem;
+    transition: 0.15s ease;
+    outline: 0;
+    width: 90%;
+}
+
+.customInput:focus{
+    box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+}

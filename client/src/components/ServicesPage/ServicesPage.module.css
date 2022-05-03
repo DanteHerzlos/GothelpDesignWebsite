@@ -1,0 +1,47 @@
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: gray;
+    background-image: url(../../../public/img/Services_Cover.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: white;
+}
+
+.container{
+    background-color: rgba(99, 99, 99, 0.6);  
+    border-radius: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: auto;
+    max-width: 1300px;
+    padding-top: 70px; 
+    padding-bottom: 20px;
+}
+
+.col3{
+    display: flex;
+}
+
+.col3 > div{
+    width: calc(100% / 3);
+    overflow: hidden;
+}
+
+@media (max-width: 740px){
+    .col3{
+        display: block;
+    }
+    .col3 > div{
+        width:100%;
+    }
+}
+
+@media (max-width: 1444px){
+    .container{
+        max-width: 90vw;
+    }
+}

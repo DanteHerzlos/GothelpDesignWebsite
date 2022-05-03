@@ -1,0 +1,58 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family:  'Roboto', 'Oxygen', 'Ubuntu', 
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+
+}
+
+body {
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p, h1,h2,h3,h4,h5,h6,label, a{
+  text-transform: uppercase
+}
+
+p {
+  line-height: 1.5em;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+.container{
+  max-width: 95vw;
+  margin: auto;
+  padding-top: 30px; 
+  text-align: center;
+}
+
+hr{
+  border: none;
+  border-radius: 50px;
+  height: 3px;
+  width: 60px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.wht{
+  background-color: white;
+  color: white;
+}
+
+.blk{
+  background-color: black;
+  color: black;
+}

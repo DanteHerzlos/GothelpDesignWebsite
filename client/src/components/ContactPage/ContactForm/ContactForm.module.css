@@ -1,0 +1,23 @@
+.contactForm label{
+    text-align: left;
+    display: block;
+    margin-left: 6px;
+    margin-bottom: 5px;
+}
+
+.contactForm input, .contactForm textarea{
+    margin-bottom: 15px;
+}
+
+.contactForm textarea{
+    resize: none;
+}
+span{
+    color:red;
+}
+
+@media (max-width: 670px) {
+    .contactForm label{
+        margin-left: 2.5vw;
+    }
+}
