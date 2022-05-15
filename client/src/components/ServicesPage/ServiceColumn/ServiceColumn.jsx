@@ -4,7 +4,6 @@ import cl from './ServiceColumn.module.css'
 function ServiceColumn(service) {
   const animElement = useRef()
   const observer = useRef()
-
   useEffect(() => {
     let options = {
       threshold: 0.3
@@ -19,14 +18,18 @@ function ServiceColumn(service) {
     observer.current.observe(animElement.current)
   }, [])
 
-
+ 
   return (
     <div ref={animElement}>
-        <img className={cl.serviceLogo} src={service.img} alt={service.title}/>
+      {service.imgPath &&
+        <img 
+          className={cl.serviceLogo} 
+          src={window.location.origin + '/' + service.imgPath} alt={service.title}
+        /> }
         <div className={cl.serviceText}>
             <h3>{service.title}</h3>
             <div>
-              {service.body.map((description, index) => {
+              {service.body && service.body.split('; ').map((description, index) => {
                 return <p key={index}>{description}</p>
               })}
             </div>

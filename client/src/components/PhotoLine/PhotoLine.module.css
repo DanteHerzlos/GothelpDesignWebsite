@@ -1,7 +1,6 @@
 .photoLine{
     height: 70vh;
     background-color: gray;
-    background-image: url(../../../public/img/wall3.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

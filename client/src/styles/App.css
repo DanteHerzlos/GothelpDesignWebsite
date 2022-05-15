@@ -56,3 +56,10 @@ hr{
   background-color: black;
   color: black;
 }
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}

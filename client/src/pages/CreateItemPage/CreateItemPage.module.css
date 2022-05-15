@@ -1,0 +1,11 @@
+.content {
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    max-width: 500px;
+}
+
+.loader{
+    text-align: center;
+    align-items: center;
+}

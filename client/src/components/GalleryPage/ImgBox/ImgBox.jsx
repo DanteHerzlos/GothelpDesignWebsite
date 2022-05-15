@@ -10,7 +10,11 @@ function ImgBox({customClickEvent, ...data}) {
                 <p>{data.body}</p>
             </div>
         </div>
-        <img className={cl.galleryImg} src={data.img} alt={data.title} />
+        {data.imgPath && <img 
+          className={cl.galleryImg} 
+          src={window.location.origin + '/' + data.imgPath} 
+          alt={data.title} 
+        /> }
     </div>
   )
 }

@@ -20,7 +20,7 @@ function AboutPage() {
   }, [])
 
   return (
-    <div className={cl.about} id="about">
+    <div className={cl.about} style={{backgroundImage: "url(/wall2.jpg)"}} id="about">
         <div ref={animElement} className={cl.container}>
             <h2>Кто мы</h2>
             <hr className='blk'/>

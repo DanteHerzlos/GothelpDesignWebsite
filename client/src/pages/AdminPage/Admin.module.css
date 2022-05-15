@@ -1,0 +1,87 @@
+.collection{
+    margin-top: 10px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    animation: slidein 1s ease both;
+
+}
+.collection :not(:last-child){
+    line-height: 0rem;
+    font-size: 0px;
+    padding: 0;
+    transition: all 1s ease;
+}
+
+.collection.active :not(:last-child){
+    line-height: 1.5rem;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 1s ease;
+
+}
+
+.collection.active{
+    animation: slideout 1s ease both
+}
+
+.content{
+    display: flex;
+}
+
+
+.collectionItem {
+    transition: all 1s ease;
+    overflow: hidden;
+    display: block;
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #42a5f5;
+    transition: 0.3s ease;
+    cursor: pointer;
+    user-select: text;
+    text-transform: none;
+}
+
+.collectionItem:hover{
+    background-color: #ddd;
+}
+
+.collectionItem.active{
+    background-color: #42a5f5;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .collection.active{
+        position: fixed;
+    }
+    .collection{
+        width: 35px;
+        position: fixed;
+    }
+    
+}
+
+@keyframes slidein {
+    from {
+        width: 200px;
+    }
+  
+    to {
+        width: 20px;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+        width: 20px;
+    }
+  
+    to {
+        width:  200px;
+    }
+  }
