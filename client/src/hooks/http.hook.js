@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react"
 
-export const API_URL = 'http://localhost:5000/api'
+export const API_URL = '/api'
 
 export const useHttp = () => {
     const [loading, setLoading] = useState(false)
